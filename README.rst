@@ -39,4 +39,4 @@ Examples::
 See Also
 --------
 
-http://www.ietf.org/id/draft-pbryan-zyp-json-pointer-01.txt
+http://tools.ietf.org/html/rfc6901
