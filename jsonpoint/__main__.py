@@ -1,5 +1,6 @@
 import argparse
 from sys import stdin
+from pprint import pprint
 
 
 def main():
@@ -12,7 +13,7 @@ def main():
 
     from jsonpoint import get
 
-    print get(args.input.read(), args.pointer)
+    pprint(get(args.input.read(), args.pointer))
 
 
 if __name__ == "__main__":

@@ -3,3 +3,5 @@
 __pycache__
 *.egg-info*
 *.pyc
+jsonpoint.sublime-project
+jsonpoint.sublime-workspace

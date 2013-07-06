@@ -22,17 +22,17 @@ Given::
 
 Import it::
 
-    from jsonpoint import jsonpoint
+    import jsonpoint
 
 Examples::
 
-    >>> jsonpoint('/foo/inner%20object', json_s)
+    >>> jsonpoint.get('/foo/inner%20object', json_s)
     {'baz': 'qux'}
 
-    >>> jsonpoint('/foo/inner%20object/baz', json_s)
+    >>> jsonpoint.get('/foo/inner%20object/baz', json_s)
     'qux'
 
-    >>> jsonpoint('/foo/bar/0', json_s)
+    >>> jsonpoint.get('/foo/bar/0', json_s)
     'element0'
 
 

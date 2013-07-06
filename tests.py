@@ -43,8 +43,9 @@ class JSONPointTestCase(TestCase):
     def test_get_non_numeric_list(self):
 
         import jsonpoint
+        from jsonpoint.parser import InvalidPointer
 
         data = '{"foo": [1,2,3]}'
 
-        with self.assertRaises(jsonpoint.InvalidPointer):
+        with self.assertRaises(InvalidPointer):
             jsonpoint.get(data, "/foo/a")
